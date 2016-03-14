@@ -56,6 +56,7 @@ public class Ejercicio04 {
 		    return binario;
 	}
 
+<<<<<<< HEAD
 	static String hexadecimal(int num){
 		int acum=0;
 		String resultado="";
@@ -69,3 +70,18 @@ public class Ejercicio04 {
 	}
 		
 }
+=======
+	static String octal(int num){
+		int acum=0;
+		String resultado="";
+		final char[] arrayOctal={'0', '1', '2', '3', '4', '5', '6', '7'};
+		while(num>0){
+			acum=num%8;
+			resultado=arrayOctal[acum]+resultado;
+			num/=8;
+		}
+		return resultado;
+	}
+}
+
+>>>>>>> octal
