@@ -55,4 +55,17 @@ public class Ejercicio04 {
 		    
 		    return binario;
 	}
+
+	static String hexadecimal(int num){
+		int acum=0;
+		String resultado="";
+		final char[] arrayHexa={'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+		while(num>0){
+			acum=num%16;
+			resultado=arrayOctal[acum]+resultado;
+			num/=16;
+		}
+		return resultado;
+	}
+		
 }
